@@ -7,7 +7,8 @@ describe("launchOutput", function(){
 it('should return "Launch!" when passed a number only divisible by 2,', function(){
   let expected = "Launch!";
   let actual = launchOutput(8);
-  assert.strictEqual(actual,expected);
+//  assert.strictEqual(actual,expected);
+  expect(actual).toEqual(expected); // use this for Mars Rover assignment !!!
 })
 
 it('should return "Code!" when passed a number only divisible by 3,', function(){
